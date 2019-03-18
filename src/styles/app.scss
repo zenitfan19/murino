@@ -1,0 +1,13 @@
+@import "common/header.scss";   
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+body {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 18px;
+}

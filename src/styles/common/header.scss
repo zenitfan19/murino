@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 20px;
+    a {
+        text-decoration: none;
+        color: #111;
+    }
+    .hamburger {
+        display: none;
+    }
+    .header-title {   
+        font-weight: 900;
+        font-size: 18px;    
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+    .header-menu a {        
+        margin-right: 38px;
+    }
+    .header-menu a:last-child {        
+        margin-right: 0;
+    }
+    .header-menu a:hover {        
+        border-bottom: 1px solid #111;
+    }
+    .header-buttons {
+        margin-right: 39px;
+        a {            
+            margin-left: 43px;        
+        }
+        a:first-child {
+            margin-left: 0;
+        }
+        a:last-child {
+            margin-left: 52px;
+        }
+    }    
+}
