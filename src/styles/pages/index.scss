@@ -1,0 +1,156 @@
+.meta-info {
+    display: flex;
+    flex-direction: row;
+    span {
+        font-size: 12px;
+        color: #818181;
+        margin-left: 10px;
+    }
+    .meta-info__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 37px;
+    }  
+    .meta-info__item:first-child {
+        margin-left: 0;
+    } 
+}
+.main-news-left-block__image img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+.main-news-left-block__title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main-news-left-block__title span {
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+}
+.main-news-left-block__title span:hover {
+    text-decoration-line: underline;
+}
+.main-news {    
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 310px;
+    grid-column-gap: 40px;
+    .main-news-right-block {
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 3px;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;                             
+        .main-news-right-block__title {
+            margin-bottom: 20px;
+            padding: 0 20px;
+            span {
+                font-weight: 500;
+                font-size: 24px;
+            }            
+        }
+        .main-news-right-block__btn {
+            cursor: pointer;
+            width: 144px;
+            height: 32px;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            border-radius: 3px;            
+            margin: 0 auto;
+            margin-top: auto;            
+            display: flex;
+            justify-content: center;
+            align-items: center;                       
+        }
+        .main-news-right-block__content-new {
+            padding: 20px 20px;            
+            position: relative;
+            cursor: pointer;
+        }
+        .main-news-right-block__content-new::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 20px;
+            width: 270px;
+            border-bottom: 1px solid #CFCFCF;
+        }
+        .main-news-right-block__content-new:hover {
+            background-color: #FEFFEC;
+        }
+        .main-news-right-block__content-new-title {
+           margin-bottom: 20px; 
+        }
+    }
+}
+.main-news-left-block.grid-block {    
+    display: grid;    
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-columns: minmax(0, auto) minmax(0, auto) minmax(0, auto); 
+    .grid-new {
+        .main-news-left-block__title span {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .main-news-left-block__image img {
+            height: 351px;
+        }
+        .main-news-left-block__image img:hover {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            transform: translateY(-5px);
+            -moz-transform: translateY(-5px);
+            -ms-transform: translateY(-5px);
+            -webkit-transform: translateY(-5px);
+            -o-transform: translateY(-5px);
+        }
+    }           
+}
+.main-news-right-block__content-item {
+    padding: 20px;
+    position: relative;
+    cursor: pointer;                
+}
+.main-news-right-block__content-item:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 270px;
+    border-bottom: 1px solid #CFCFCF;
+}
+.main-news-right-block__content-item:first-child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 270px;
+    border-bottom: 1px solid #111;
+}
+.main-news-right-block__content-item:hover {
+    background-color: #FEFFEC;
+}
+.top-news {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .top-news-title {
+        margin-bottom: 20px;
+        span {
+            font-size: 24px;
+            font-weight: bold;
+        }                
+    }
+    .top-news-content {
+        display: grid;
+        grid-column-gap: 40px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .main-news-left-block__title span {
+            font-size: 18px;
+        }
+    }
+    
+    
+}
