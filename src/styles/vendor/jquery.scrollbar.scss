@@ -208,9 +208,9 @@
 .scrollbar-outer > .scroll-element .scroll-element_outer,
 .scrollbar-outer > .scroll-element .scroll-element_track,
 .scrollbar-outer > .scroll-element .scroll-bar {
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
 }
 
 .scrollbar-outer > .scroll-element .scroll-bar {
@@ -386,9 +386,9 @@
 }
 
 .scrollbar-light > .scroll-element .scroll-element_outer {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
 }
 
 .scrollbar-light > .scroll-element .scroll-element_size {
@@ -400,9 +400,9 @@
   background: -o-linear-gradient(left, #dbdbdb 0%, #e8e8e8 100%);
   background: -ms-linear-gradient(left, #dbdbdb 0%, #e8e8e8 100%);
   background: linear-gradient(to right, #dbdbdb 0%, #e8e8e8 100%);
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
 }
 
 .scrollbar-light > .scroll-element.scroll-x {
@@ -658,17 +658,17 @@
 
 .scrollbar-dynamic > .scroll-element .scroll-element_outer {
   opacity: 0.3;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  border-radius: 12px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
 }
 
 .scrollbar-dynamic > .scroll-element .scroll-element_size {
   background-color: #cccccc;
   opacity: 0;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  border-radius: 12px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
