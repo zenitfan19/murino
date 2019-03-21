@@ -7,11 +7,16 @@
 @import "pages/index.scss";
 @import "common/footer.scss";
 @import "pages/section.scss";
+@import "pages/article.scss";
 @import "pages/search-result.scss";
 
 @font-face {
     font-family: Roboto;
     src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Cormorant;
+    src: url(../fonts/Cormorant-LightItalic.otf);
 }
 body {
     font-family: Roboto;

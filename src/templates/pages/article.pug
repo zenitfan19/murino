@@ -1,0 +1,128 @@
+extends ../template
+
+block variables
+    - var title = 'Имя статьи'
+    - var page_number = 4   
+
+block content
+    .main-container
+        .breadcrumbs
+            .breadcrumbs-link
+                a(href="index.html") Главная
+                img(src="assets/images/breadcrumbs.svg" alt="")
+            .breadcrumbs-link
+                a(href="culture.html") Культура
+                img(src="assets/images/breadcrumbs.svg" alt="")
+        .main-news.article
+            .main-news-left-block
+                .main-news-left-block__title
+                    span Мурино стал лидером по качеству<br>жизни и радости жителей
+                .main-news-left-block__meta-info.meta-info
+                    .main-news-left-block__meta-info-date.meta-info__item
+                        img(src="assets/images/date-icon-white.svg", alt="")
+                        span 21 февраля
+                    .main-news-left-block__meta-info-views.meta-info__item
+                        img(src="assets/images/views-icon-white.svg", alt="")
+                        span 350 просмотров
+                    .main-news-left-block__meta-info-comments.meta-info__item
+                        img(src="assets/images/comments-icon-white.svg", alt="")
+                        span 31 комментарий            
+
+        .article-content
+            .article-content-title
+                span Первый заголовок статьи
+            .paragraph
+                span Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.
+            .img-paragraph.paragraph
+                img(src="assets/images/article-photo.jpg" alt="")
+            .paragraph
+                span Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.
+            .article-survey-block.survey
+            .paragraph
+                span Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.
+            .citation
+                img.citation-up-img(src="assets/images/citation-sign-up.svg" alt="")
+                img.citation-down-img(src="assets/images/citation-sign-down.svg" alt="")
+                .citation-text
+                    span Вставка цитаты c использованием кавычек и шритфа cormorant light italic
+                .citation-author
+                    span И.А. Петров
+            .paragraph
+                span Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.
+            .article-share-buttons
+                a.vk
+                    span Поделиться в  
+                    span.share-btn-name &nbsp;ВК
+                a.facebook
+                    span Поделиться в 
+                    span.share-btn-name &nbsp;ФБ
+        .article-comments
+
+    
+        .top-news
+            .top-news-title
+                span Читайте дальше
+            .top-news-content
+                .main-news-left-block__new.grid-new
+                        .main-news-left-block__image
+                            img(src="assets/images/grid-new-4.jpg" alt="")
+                        .main-news-left-block__title
+                            span Уровень жизни достиг критически высоких показателей
+                        .main-news-left-block__meta-info.meta-info
+                            .main-news-left-block__meta-info-date.meta-info__item
+                                img(src="assets/images/date-icon.svg", alt="")
+                                span 21.02.2019
+                            .main-news-left-block__meta-info-views.meta-info__item
+                                img(src="assets/images/views-icon.svg", alt="")
+                                span 350
+                            .main-news-left-block__meta-info-comments.meta-info__item
+                                img(src="assets/images/comments-icon.svg", alt="")
+                                span 31
+                .main-news-left-block__new.grid-new
+                        .main-news-left-block__image
+                            img(src="assets/images/grid-new-3.jpg" alt="")
+                        .main-news-left-block__title
+                            span Уровень жизни достиг критически высоких показателей
+                        .main-news-left-block__meta-info.meta-info
+                            .main-news-left-block__meta-info-date.meta-info__item
+                                img(src="assets/images/date-icon.svg", alt="")
+                                span 21.02.2019
+                            .main-news-left-block__meta-info-views.meta-info__item
+                                img(src="assets/images/views-icon.svg", alt="")
+                                span 350
+                            .main-news-left-block__meta-info-comments.meta-info__item
+                                img(src="assets/images/comments-icon.svg", alt="")
+                                span 31
+                .main-news-left-block__new.grid-new
+                        .main-news-left-block__image
+                            img(src="assets/images/grid-new-2.jpg" alt="")
+                        .main-news-left-block__title
+                            span Уровень жизни достиг критически высоких показателей
+                        .main-news-left-block__meta-info.meta-info
+                            .main-news-left-block__meta-info-date.meta-info__item
+                                img(src="assets/images/date-icon.svg", alt="")
+                                span 21.02.2019
+                            .main-news-left-block__meta-info-views.meta-info__item
+                                img(src="assets/images/views-icon.svg", alt="")
+                                span 350
+                            .main-news-left-block__meta-info-comments.meta-info__item
+                                img(src="assets/images/comments-icon.svg", alt="")
+                                span 31
+                .main-news-left-block__new.grid-new
+                        .main-news-left-block__image
+                            img(src="assets/images/grid-new-1.jpg" alt="")
+                        .main-news-left-block__title
+                            span Уровень жизни достиг критически высоких показателей
+                        .main-news-left-block__meta-info.meta-info
+                            .main-news-left-block__meta-info-date.meta-info__item
+                                img(src="assets/images/date-icon.svg", alt="")
+                                span 21.02.2019
+                            .main-news-left-block__meta-info-views.meta-info__item
+                                img(src="assets/images/views-icon.svg", alt="")
+                                span 350
+                            .main-news-left-block__meta-info-comments.meta-info__item
+                                img(src="assets/images/comments-icon.svg", alt="")
+                                span 31
+                            
+                
+

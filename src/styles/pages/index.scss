@@ -24,11 +24,15 @@
 .main-news-left-block__title {
     margin-top: 20px;
     margin-bottom: 20px;
+    a {
+        text-decoration: none;
+    }
 }
 .main-news-left-block__title span {
     font-weight: bold;
     font-size: 24px;
     cursor: pointer;
+    color: #111;
 }
 .main-news-left-block__title span:hover {
     text-decoration-line: underline;
@@ -95,6 +99,7 @@
         .main-news-left-block__title span {
             font-size: 18px;
             font-weight: bold;
+            color: #111;
         }
         .main-news-left-block__image img {
             height: 351px;
@@ -149,6 +154,7 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         .main-news-left-block__title span {
             font-size: 18px;
+            color: #111;
         }
     }
     
