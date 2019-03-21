@@ -1,0 +1,46 @@
+.search-result-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .page-title {
+        margin-bottom: 0;
+        span {
+            font-size: 36px;
+        }
+    }
+}
+.search-page-option select {
+    visibility: hidden;
+}
+.search-result-news {
+    margin-bottom: 40px;
+}
+.search-page-option {
+    align-self: flex-end;
+}
+.optWrapper {
+    font-size: 14px;
+}
+.SumoSelect:focus>.CaptionCont, .SumoSelect:hover>.CaptionCont, .SumoSelect.open>.CaptionCont {
+    box-shadow: none;
+}
+.SumoSelect {
+    width: auto;
+    height: 100%;
+}
+.SumoSelect>.optWrapper {
+    width: auto;
+}
+.SelectBox {
+    padding: 0;
+}
+.SumoSelect>.CaptionCont {
+    border: none;
+    font-size: 14px;
+    text-decoration-line: underline;
+    label {
+        i {
+            background-image: url("../images/search-result-option.svg");
+        }
+    }
+}

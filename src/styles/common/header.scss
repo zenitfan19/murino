@@ -26,6 +26,11 @@
     .header-menu a:hover {        
         border-bottom: 1px solid #111;
     }
+    .header-menu {
+        a.active {
+            border-bottom: 1px solid #111; 
+        }
+    }
     .header-buttons {
         display: flex;
         flex-direction: row;
@@ -77,4 +82,8 @@ body {
 }
 .header, .main-container {
     padding: 0 40px;
+}
+.main-container {
+    max-width: 1404px;
+    margin: 0 auto;
 }
