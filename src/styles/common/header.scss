@@ -47,7 +47,41 @@
         img {
             margin-right: 10px;
         }
-    }    
+    }
+    .header-mobile-menu {
+        display: none;
+        width: 300px;
+        height: auto;
+        background-color: #fff;        
+        position: absolute;
+        top: 0;
+        left: 20px;
+        .header-links {
+            margin-top: 80px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            a {
+                margin-top: 40px;
+            }
+        } 
+        .header-buttons {
+            margin-top: 60px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            a {
+                margin-bottom: 40px;
+                align-self: flex-start;
+                margin-left: 0;
+                display: block;
+            }
+            
+        }      
+    }  
+    .header-mobile-menu.active {
+        display: block;                
+    } 
 }
 .yellow-btn {
     display: flex;
@@ -86,4 +120,28 @@ body {
 .main-container {
     max-width: 1404px;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 1256px) {
+    .header-menu {
+        display: none;
+    }
+    .header .hamburger {
+        display: block;
+        padding-bottom: 5px;
+        padding-left: 0;
+        z-index: 50;
+    }
+    .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+        height: 2px;
+    }    
+    .header-title {
+        margin-right: auto;
+        z-index: 50;
+    }
+}
+@media screen and (max-width: 768px) {
+    .enter-btn {
+        display: none;
+    }
 }

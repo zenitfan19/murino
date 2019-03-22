@@ -1,0 +1,65 @@
+
+
+block variables
+    - var title = 'Анонс'
+
+    doctype html
+html
+    head
+        meta(charset="utf-8")
+        title #{title}
+        meta(content="" name="description")
+        meta(content="" name="keywords")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        //- link(href="assets/styles/normalize.css" rel="stylesheet")       
+        //- link(href="assets/styles/jquery.scrollbar.css" rel="stylesheet")
+        //- link(href="assets/styles/hamburgers.min.css" rel="stylesheet")
+        //- link(href="assets/styles/animate.css" rel="stylesheet")
+        link(href="assets/styles/app.min.css" rel="stylesheet")               
+                
+
+    body        
+        .header
+            .hamburger.hamburger--collapse
+                    .hamburger-box
+                        .hamburger-inner
+            .header-title город<br>мурино
+            .header-menu    
+                a.header-menu__link(href="index.html" target="_blank") Главная
+                a.header-menu__link(href="society.html" target="_blank") Раздел
+                a.header-menu__link(href="search-result.html" target="_blank") Результат поиска
+                a.header-menu__link(href="article.html" target="_blank") Статья
+                
+            .header-buttons
+                a.header-write__btn.yellow-btn(href="")                          
+                    span Написать
+                a.header-find__btn(href="search-result.html" target="_blank")
+                    img(src="assets/images/menu-find.svg")               
+                    span Поиск
+                a.header-find__btn.enter-btn(href="")
+                    img(src="assets/images/menu-user.svg")               
+                    span Вход
+                
+            nav.header-mobile-menu        
+                .header-links
+                    a.header-menu__link(href="index.html" target="_blank") Главная
+                    a.header-menu__link(href="society.html" target="_blank") Раздел
+                    a.header-menu__link(href="search-result.html" target="_blank") Результат поиска
+                    a.header-menu__link(href="article.html" target="_blank") Статья
+                .header-buttons
+                    a.header-mobile-find__btn.enter-btn(href="")
+                        img(src="assets/images/menu-user.svg")               
+                        span Вход
+                    a.header-mobile-find__btn(href="search-result.html" target="_blank")
+                        img(src="assets/images/menu-find.svg")               
+                        span Поиск
+                    a.header-mobile-write__btn(href="")
+                        img(src="assets/images/menu-write.svg")                         
+                        span Написать  
+        block content
+        script(src="assets/scripts/jquery-3.3.1.min.js")     
+        script(src="assets/scripts/jquery.scrollbar.js")
+        script(src="assets/scripts/jquery.sumoselect.min.js")        
+        script(src="assets/scripts/myscript.js")
+        
