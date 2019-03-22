@@ -167,6 +167,7 @@
     margin: 0 auto;
     margin-top: 40px;
     padding: 20px 0 30px 20px;
+    box-sizing: border-box;
     .road-news-content {
         display: flex;
         flex-direction: row;        
@@ -213,38 +214,39 @@
 .banner {
     width: 100%;
     margin-top: 40px;
+    height: 36vw;
     box-sizing: border-box;
-    background: linear-gradient(180deg, #E0E5E8 0%, #E3E7EA 100%);
+    background-image: url('../images/banner.png');
+    background-size: cover;
+    position: relative;
     .banner-title {
         text-align: center;
         font-size: 36px;
         font-weight: bold;
-        padding-top: 20px; 
-        background: linear-gradient(90deg, #e3e7ea, #d6dbdf);
+        padding-top: 20px;        
     }
     .banner-content {
+        position: absolute;
+        top: 20%;
+        left: 15%;
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        .banner-left-block {
-            align-self: center;
-        }
-        .banner-right-block img {
-            height: 100%;
-        }
-        .banner-left-block__title {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+        
+        .banner-block__title {
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 30px;
         }
-        .banner-left-block__content-item {
+        .banner-block__content-item {
             margin-bottom: 30px;
             img {
                 margin-left: 15px;
                 margin-right: 10px;
             }
         } 
-        .banner-left-block__content-item:last-child {
+        .banner-block__content-item:last-child {
             margin-bottom: 40px;
         }       
     }    
@@ -280,6 +282,22 @@
 @media screen and (max-width: 1326px) {
     .road-news {
         width: 100%;
+    }  
+    .banner {
+        .banner-content {
+            .banner-block__title {
+                font-size: 14px;
+                align-self: flex-start;
+            }
+            .banner-block__content {
+                .banner-block__content-item {
+                    margin-bottom: 20px;
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
     }
 }
 @media screen and (max-width: 1248px) {
@@ -291,7 +309,7 @@
         .main-news-right-block {
             display: none;
         }        
-    }
+    }    
     .adaptive-right-block {
         display: grid;
         grid-row-gap: 20px;
@@ -301,14 +319,76 @@
             display: flex;            
         }        
     }
+    .road-news {
+        padding-left: 10px;
+        padding-bottom: 20px;
+        .road-news-content {
+            .road-news-left {
+                max-height: 52vw;
+                .meta-info__item {
+                    margin-left: 25px;                    
+                }
+                .meta-info__item:first-child {
+                    margin-left: 0;
+                }
+                .road-news-left__image {
+                    img {
+                        width: 50vw;
+                        height: 41vw;
+                    }
+                }
+                .road-news-left__title {
+                    margin-bottom: 10px;
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .road-news-right {               
+                .road-news-right-new {
+                    margin-bottom: 20px;
+                    .road-news-right-content {
+                        margin-left: 10px;
+                    }
+                    .road-news-right__title {
+                        font-size: 12px;
+                    }
+                    .road-news-right__image {
+                        img {
+                            width: 12.6vw;
+                            height: 10.1vw;
+                        }
+                    }
+                    padding-left: 20px;
+                    .meta-info__item {
+                        margin-left: 30px;
+                        span {
+                            font-size: 10px;
+                            margin-left: 5px;
+                        }
+                    }
+                    .meta-info__item:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
     .top-news {
         .top-news-content {
             grid-template-columns: minmax(0, auto) minmax(0, auto) minmax(0, auto);
         }
-    }
-    
+    }   
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 856px) {
+    .banner {
+        background-image: url('../images/banner_tablet.png');
+    }
+}
+@media screen and (max-width: 1000px) {            
+    .banner {
+        min-height: 360px;                
+    }
     .top-news, .main-news-left-block.grid-block {
         .meta-info {
             .meta-info__item {
@@ -326,6 +406,7 @@
     }
     .top-news {
         .top-news-content {
+            grid-column-gap: 20px;
             .main-news-left-block__title {
                 span {
                     font-size: 14px; 

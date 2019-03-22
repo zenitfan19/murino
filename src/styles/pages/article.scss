@@ -33,7 +33,7 @@
 }
 .article-content {
     width: 52%;
-    margin: 0 auto;
+    margin: 0 auto;    
     .article-content-title {
         margin-top: 40px;
         span {
@@ -41,11 +41,7 @@
             font-size: 24px;
             line-height: 49px;
         }
-    }
-    .img-paragraph {
-        display: flex;
-        justify-content: center;
-    }
+    }    
     .article-survey-block {
         width: 506px;
         height: 296px;
@@ -58,6 +54,15 @@
             font-weight: 300;
             font-size: 18px;
             line-height: 37px;
+        }
+    }
+    .img-paragraph {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        span {
+            margin-top: 20px;
+            font-size: 14px;
         }
     }
     .citation {
@@ -130,4 +135,52 @@
     box-sizing: border-box;
     border-radius: 3px;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .article-content {
+        width: 78%;
+        .article-content-title {
+            margin-top: 20px;
+            span {
+                font-size: 18px;
+            }
+        }        
+        .paragraph {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            span {
+                font-size: 14px;
+            }
+        }
+        .img-paragraph {            
+            span {
+                margin-top: 10px;
+                font-size: 12px;
+            }
+        }
+    }
+    .main-news.article {
+        .main-news-left-block {
+            .main-news-left-block__title {
+                span {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1248px) {
+    .article-comments {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1326px) {
+    .main-news.article {
+        .main-news-left-block {
+            height: 44vw;
+        }
+    }
 }

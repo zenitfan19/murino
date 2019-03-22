@@ -59,3 +59,26 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }   
 }
+
+
+@media screen and (max-width: 1000px) {
+    .page-title {
+        span {
+            font-size: 24px;
+        }
+    }
+}
+@media screen and (max-width: 1248px) {
+    .four-columns {
+        grid-column-gap: 20px;
+        grid-template-columns: 1fr 230px;
+        .adaptive-right-block {
+            display: block;
+            height: 440px;
+        }
+        .grid-block {
+            grid-column-gap: 20px;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}

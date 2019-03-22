@@ -44,3 +44,19 @@
         }
     }
 }
+
+@media screen and (max-width: 1248px) {
+    .search-result-news {
+        display: block;
+        .grid-block {
+            grid-template-columns: 1fr 1fr 1fr;
+        }        
+    }
+    .search-result-title {
+        .page-title {
+            span {
+                font-size: 24px;
+            }
+        }
+    }
+}
