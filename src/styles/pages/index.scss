@@ -380,11 +380,6 @@
         }
     }   
 }
-@media screen and (max-width: 856px) {
-    .banner {
-        background-image: url('../images/banner_tablet.png');
-    }
-}
 @media screen and (max-width: 1000px) {            
     .banner {
         min-height: 360px;                
@@ -457,4 +452,222 @@
             }
         }
     }    
+}
+
+@media screen and (max-width: 856px) {
+    .banner {
+        background-image: url('../images/banner_tablet.png');
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .main-news-right-block.mobile {
+        display: none;
+    }
+    .road-news {
+        .road-news-content {
+            .road-news-left {
+                .meta-info__item {
+                    span.mobile {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .adaptive-right-block {
+        display: none;
+    }
+    .banner {
+        background-color: #e2e6e9;
+        background-image: url('../images/banner_mobile.png');        
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    .top-news {
+        .top-news-title {
+            span {
+                font-size: 18px;
+            }
+        }
+        .top-news-content {
+            grid-template-columns: minmax(0, auto) minmax(0, auto);
+            grid-row-gap: 20px; 
+        }
+    }
+    .main-news.head-new {
+        grid-template-columns: 100%;
+        .meta-info {
+            span {
+                font-size: 10px;
+            }
+        }
+    }
+    .main-news {
+        grid-template-columns: 1fr;
+        .main-news-left-block.grid-block {
+            grid-row-gap: 20px; 
+        }
+        .main-news-right-block {
+            .main-news-right-block__content-new::before,
+            .main-news-right-block__content-item:first-child::before,
+            .main-news-right-block__content-item:after {
+                width: 90%;
+            }
+        }        
+    }
+    .main-news.head-new {
+        .main-news-right-block {
+            display: flex;
+            margin-top: 20px;
+        }
+    }
+    .main-news-right-block.mobile {
+        margin-top: 20px;
+    }
+    .road-news {
+        padding-right: 10px;
+        .road-news-title {
+            font-size: 18px;
+        }
+        .road-news-content {
+            flex-direction: column;
+            .road-news-left {
+                max-height: unset;
+                margin-bottom: 20px;
+                .meta-info__item {
+                    span {
+                        display: none;
+                    }
+                    span.mobile {
+                        display: inline;
+                    }
+                }
+                .road-news-left__image {
+                    img {
+                        width: 100%;
+                        height: 50vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-news-left-block.grid-block {
+        grid-template-columns: minmax(0, auto);
+    }
+    .banner {
+        height: 500px;
+        .banner-title {
+            span {
+                font-size: 18px;
+            }
+        }
+        .banner-content {
+            .banner-block__content {
+                .banner-block__content-item {
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }            
+        }
+    }
+    .main-news-left-block.grid-block {
+        .grid-new {
+            .main-news-left-block__image {
+                img {
+                    height: 60vw;
+                }
+            }
+            .main-news-left-block__title {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .top-news {
+        .main-news-left-block__image {
+            img {
+                height: 60vw;
+            }
+        }        
+        .top-news-content {
+            grid-template-columns: minmax(0, auto);             
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .banner {
+        background-position-y: bottom;
+    }
+}
+
+@media screen and (max-width: 425px) {    
+    .main-news-left-block__title {
+        span {
+            font-size: 14px;
+        }
+    }
+    .main-news-right-block__content-item, .main-news-right-block__content-new {
+        span {
+            font-size: 14px;
+        }
+    }
+    .main-news {
+        .main-news-right-block {
+            .main-news-right-block__title {
+                span {
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .road-news {
+        .road-news-title {
+            font-size: 14px;
+        }
+        .road-news-content {
+            .road-news-left {
+                .road-news-left__title {
+                    margin-top: 10px;
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }
+            .road-news-right {
+                .road-news-right-new {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .banner {
+        background-image: url('../images/banner_mobile.png'), linear-gradient(90deg, #e2e6e9 0%, #d7dbdf 100%); 
+    }
+}
+@media screen and (max-width: 400px) {
+    .main-news.head-new {
+        .meta-info {
+            .meta-info__item {
+                margin-left: 5px;
+                span {
+                    margin-left: 5px;
+                }
+            }
+            .meta-info__item:first-child {
+                margin-left: 0;
+            }            
+        }
+    }
 }

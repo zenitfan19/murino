@@ -51,7 +51,7 @@ $(document).ready(function () {
                   $(document).find('.hamburger').removeClass('is-active'); // меняем значок гамбургера
             }
       });
-      if (screen.width < 1249) {                    
+      if ((screen.width < 1249) && (screen.width > 766)) {                    
         $(document).find('.top-news-content > .main-news-left-block__new').each(function (index, element) {                      
           var el = $('.top-news-content > .main-news-left-block__new').eq(index);
           if(index > 2) {
@@ -78,7 +78,7 @@ $(document).ready(function () {
                         $(document).find('.header-mobile-menu').removeClass('fadeOutLeft');
                         $(document).find('.header-mobile-menu').removeClass('animated');
                   }
-                  if (screen.width < 1249) {                    
+                  if ((screen.width < 1249) && (screen.width > 766)) {                    
                     $(document).find('.top-news-content > .main-news-left-block__new').each(function (index, element) {                      
                       var el = $('.top-news-content > .main-news-left-block__new').eq(index);
                       if(index > 2) {

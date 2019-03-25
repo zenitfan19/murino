@@ -60,3 +60,40 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {    
+    .search-result-news {
+        .grid-block {
+            grid-template-columns: minmax(0, auto) minmax(0, auto);        
+        }        
+    }    
+}
+@media screen and (max-width: 600px) {
+    .search-result-news {
+        margin-top: 20px;                    
+        .grid-block {
+            grid-template-columns: minmax(0, auto);                      
+        }
+    }
+    .search-result-title {
+        flex-direction: column;
+        .page-title {
+            span {
+                font-size: 14px;
+            }
+        }
+        .search-page-option {
+            align-self: flex-start;
+            margin-top: 20px;
+        }
+        .SumoSelect > .CaptionCont {
+            font-size: 10px;
+            label {
+                i {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+    }
+}

@@ -171,16 +171,121 @@
     }
 }
 
+@media screen and (max-width: 1326px) {
+    .main-news.article {
+        .main-news-left-block {
+            height: 44vw;
+        }
+    }
+}
+
 @media screen and (max-width: 1248px) {
     .article-comments {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 1326px) {
+@media screen and (max-width: 767px) {
     .main-news.article {
         .main-news-left-block {
-            height: 44vw;
+            .main-news-left-block__title {
+                span {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .article-content {
+        .paragraph {
+            span {
+                line-height: 25px;
+            }
+        }
+        .article-content-title {
+            span {
+                font-size: 14px;
+            }
+        }
+        .article-survey-block {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 501px) {
+    .img-paragraph.mobile {
+        display: none;
+    }
+    .main-news.article.mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .article-content {
+        width: 87.5%;
+        .article-share-buttons {
+            a {
+                font-size: 12px;
+            }
+        }
+        .citation {
+            width: 100%;
+            .citation-text, .citation-author {
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+        .paragraph {
+            span {
+                font-size: 12px;
+            }
+        }
+        .img-paragraph {
+            display: none;
+        }
+    }
+    .main-news.article.mobile {
+        display: block;        
+        .main-news-left-block {
+            height: 60vw;
+            padding-bottom: 10px;
+            .main-news-left-block__title {                
+                padding-right: 20px;
+            }
+        }
+    }
+    .main-news.article {
+        display: none;
+        .main-news-left-block {
+            .meta-info {    
+                .meta-info__item:first-child {
+                    margin-left: 0;
+                }            
+                .meta-info__item {
+                    margin-left: 10px;
+                    span {
+                        font-size: 10px;
+                        margin-left: 5px;
+                    }
+                }
+            }            
+        }
+    }
+    .img-paragraph.mobile {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+        span {
+            font-size: 12px;            
+        }
+        .img-description {
+            display: block;
+            width: 87.5%;
+            margin: 0 auto;
+            padding-left: 30px;
         }
     }
 }
