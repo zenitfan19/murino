@@ -23,6 +23,32 @@ $(document).ready(function () {
           });   
           
           
+          $(document).on('click', '.header-find__btn', function () {            
+            $('.header-menu').addClass('hidden');            
+            $('.header-write__btn').addClass('hidden');            
+            $('.header-find__input').addClass('fadeInRight animated is-active');
+            $(this).toggleClass('is-active');
+            if (screen.width < 769) {
+              $('.header-title').addClass('hidden');
+            }
+      });
+      $(document).mouseup(function (e) { // событие клика по веб-документу
+        if($('.header-find__btn').hasClass('is-active')) {
+          var div = $('.header-find__input'); // тут указываем сласс элемента
+        if ($('.header-find__input').is(e.target) || $('.header-find__input input').is(e.target) || $('.header-find__input a').is(e.target) || $('.header-find__btn').is(e.target)) {
+              return;
+        }
+        if (!div.is(e.target) && div.has(e.target).length === 0) { // если клик был не по нашему блоку и не по его дочерним элементам
+          $('.header-menu').removeClass('hidden'); 
+          $('.header-write__btn').removeClass('hidden'); 
+          div.removeClass('is-active');
+          div.removeClass('fadeInRight animated is-active');         
+          $(document).find('.header-find__btn').removeClass('is-active'); // меняем значок гамбургера
+          $('.header-title').removeClass('hidden');
+        }
+        }
+  });
+
           $(document).on('click', '.hamburger', function () {
             $(document).find('.header-mobile-menu').addClass('active fadeInLeft animated');
             if ($(this).hasClass('is-active')) {
